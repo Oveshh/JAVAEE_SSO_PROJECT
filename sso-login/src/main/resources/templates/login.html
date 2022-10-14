@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Login Module</title>
+</head>
+<body>
+    <h1>用户登录 </h1>
+    <p style="color: red;" th:text="${session.msg}"></p>
+    <form action="/login" method="POST">
+        姓名:  <input name="username" value="">
+        <br></br>
+        密码:  <input name="password" value="">
+        <br></br>
+        <button type="submit" style="width:60px;height:30px"> login </button>
+    </form>
+
+</body>
+</html>
